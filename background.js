@@ -1,7 +1,7 @@
 // Called when the user clicks on the browser action.
 chrome.browserAction.onClicked.addListener(function(tab) {
 	//url fo tabs to remove from chrome browser
-	var url = "https://www.google.it/*";
+	var url = ["https://www.google.it/*"];
 	chrome.tabs.query({url: url}, function(tabs) {
     
     //cycle through all the tabs to remove them
